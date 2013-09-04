@@ -1,0 +1,10 @@
+<h1> edit your note here </h1>
+
+<form action="/note/<%=@note.id%>/edit" method="POST">
+<fieldset>
+<legend>Edit your note:</legend>
+Title: <input type="text" size="30" name="title" value="<%=@note.title%>"><br>
+Content: <input type="text" size="30" name="content" value="<%=@note.content%>"><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>

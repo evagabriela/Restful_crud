@@ -1,0 +1,14 @@
+<h1><%= @note.title%></h1>
+<p><%= @note.content%></p>
+
+
+
+<a href="/">Click here to create a new note</a>
+
+<a href ="/note/<%=@note.id%>/edit">Edit</a>
+
+  <form action="/note/<%=@note.id%>/delete" method="POST">
+  <input type="submit" value="Delete">
+  </form>
+
+
