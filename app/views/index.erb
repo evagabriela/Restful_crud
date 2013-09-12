@@ -1,11 +1,11 @@
 <div class="container">
   <h1>Welcome to my Notes Aplication!</h1>
 
-<form action="/new_note" method="POST">
+<form action="/notes" method="POST">
 <fieldset>
 <legend>Create a new note:</legend>
-Title: <input type="text" size="30" name="title"><br>
-Content: <input type="text" size="30" name="content"><br>
+Title: <input type="text" size="30" name="note[title]"><br>
+Content: <input type="text" size="30" name="note[content]"><br>
 <input type="submit" value="Submit">
 </fieldset>
 </form>
