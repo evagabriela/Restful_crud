@@ -16,17 +16,18 @@ get '/notes/:id' do #show/read
   erb :show_note 
 end
 
-get '/note/:id/edit' do
+get '/note/:id/edit' do    
   @note = Note.find(params[:id])
   erb :edit_note
 end
 
 post '/notes/:id/edit' do  #updating
+
   Note.update(params[:id],:title => params[:title], :content => params[:content])
   redirect "/note/#{params[:id]}"
 end
 
-post '/note/:id/delete' do  #delete
+post '/note/:id/delete' do  #delete  #===> here is the destroy (restful)
   Note.destroy(params[:id])
 redirect "/"
 end
