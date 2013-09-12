@@ -3,9 +3,9 @@
 
 
 
-<a href="/">Click here to create a new note</a>
+<a href="/notes">Click here to create a new note</a>
 
-<a href ="/note/<%=@note.id%>/edit">Edit</a>
+<a href ="/notes/<%=@note.id%>/edit">Edit</a>
 
   <form action="/note/<%=@note.id%>/delete" method="POST">
   <input type="submit" value="Delete">
